@@ -3,6 +3,13 @@ import React from 'react';
 const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, setViews }) => {
   return (
     <div>
+      <h3>¡FELICITACIONES ANITA!</h3>
+      <p>TE OFRECEMOS LOS MEJORES PRÉSTAMOS PARA TI</p>
+      <div> 
+        <img src="../../public/image/filtrar.png" alt="filtrar" />
+        Filtros 
+        <i className="fas fa-sort-up"></i>
+      </div>
       <button 
           type="button" 
           onClick={() => {

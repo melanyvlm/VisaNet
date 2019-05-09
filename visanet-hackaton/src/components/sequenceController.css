@@ -1,0 +1,8 @@
+.list {
+    list-style: none;
+    /* border-radius: 50%; */
+    color: white;
+    width:5%;
+    height: 15%;
+    text-align: center;
+}
