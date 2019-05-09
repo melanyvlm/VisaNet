@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ViewLoans from './ViewLoans';
-import CalculateLoan from './CalculateLoan';
+import CalculateLoan from './CalculateLoan.jsx';
 import SequenceController from './SequenceController';
 
 const LoanControl = () => {
