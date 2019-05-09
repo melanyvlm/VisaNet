@@ -1,0 +1,19 @@
+.picture {
+    width: 35%;
+    height: 80%;
+    border-radius: 10%;
+}
+.data {
+    list-style: none;
+}
+.transform {
+    text-transform: uppercase;
+}
+.color {
+    color: white;
+    background-color: #CF387A;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 0.8rem;
+    padding: 5%;
+}
