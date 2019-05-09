@@ -21,7 +21,6 @@ const App = () => {
               </div>
               <a href="#" className="bold">CONOCE NUESTROS SERVICIOS</a>
               </div>
-              {/* <button className="btn-service color-pink">CONOCE NUESTROS SERVICIOS</button>           */}
               </div>
             </div>
             <div className="col-6 ">
@@ -40,16 +39,51 @@ const App = () => {
      </div>
      </main>
 {/* Segunda section */}
-<h4 className="text-center m-5">¿QUÉ ENCONTRARÉ EN JUNTAS?</h4>
+<h4 className="text-center m-5 bold">¿QUÉ ENCONTRARÉ EN JUNTAS?</h4>
+   <div className="container">
+<div className="row">
 
-    <div className="d-inline-flex ">
-  <div className="img1 eq img"></div>
-  <div className="img3 eq  img" ></div>
-  <div className="img2 eq img"></div>
+<div className="col-md-4">
+<div className="img1 eq img"></div>
 
-    
-    </div>
+<p className=" text-center">GARCOAS</p>
 
+</div>
+<div className="col-md-4">
+<div className="img3 eq  img" ></div>
+<p className=" text-center">GARCOAS</p>
+
+</div>
+<div className="col-md-4">
+<div className="img2 eq img"></div>
+
+<p className=" text-center">GARCOAS</p>
+
+</div>
+</div>
+</div>
+
+
+
+
+{/* SERVICIOS */}
+   <div className="container">
+<div className="row">
+<div className="col-md-6">
+<div className="img7 img"></div>
+
+
+</div>
+<div className="col-md-6">
+<div className="img div-fucsia" >
+<h2 className="color-yellow">PIDE UN PRÉSTAMO PARA TU NEGOCIO</h2>
+<p>Encuentra préstamos a tu medida , sintantos requisitos y de forma rápida</p>
+<button className="yellow-btn">PIDE TU PRÉSTAMO</button>
+</div>
+
+</div>
+</div>
+</div>
 
     {/* <section>
       <div className="contenedor">
@@ -70,8 +104,49 @@ const App = () => {
 
     
 {/* Servicios */}
-   <h4 className="text-center m-5">NUESTROS SERVICIOS</h4>
+   <h4 className="text-center m-5 bold">NUESTROS SERVICIOS</h4>
+{/* Tercera sección */}
 
+<h4 className="text-center m-5 bold"> Y TAMBIÉN TE OFRECEMOS SOLUCIONES PARA INCREMENTAR TUS VENTAS</h4>
+<div className="container">
+<div className="row">
+
+<div className="col-md-4">
+<button className="yellow-btn">VENDO POR FACEBOOK</button>
+<div className="card border-success mb-3 mt-5" >
+  <div className="card-body">
+    <h5 className="card-title">CON ESTE PACK AUMENTARÁS UN 20% DE TUS VENTAS</h5>
+    <div className="img4 img-little"></div>
+  </div>
+</div>
+
+</div>
+<div className="col-md-4">
+<button className="yellow-btn ">TENGO UNA TIENDA FÍSICA Y QUIERO CRECER</button>
+<div className="card border-success mb-3 mt-5" >
+  <div className="card-body">
+    <h5 className="card-title">CON ESTE PACK PODRÁS VENDER DE FORMA ONLINE</h5>
+    <div className="img6 img-little"></div>
+  </div>
+</div>
+
+</div>
+<div className="col-md-4 " >
+<button className="yellow-btn">BUSCO SERVICIOS DE VALOR AGREGADO</button>
+<div className="card border-success mb-3 mt-5" >
+  <div className="card-body">
+    <h5 className="card-title">CON ESTE PACK PODRÁS OFRECER MÁS SERVICIOS</h5>
+    <div className="img4 img-little"></div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<footer>
+  <div className="color-black ">VISANET PERU</div>
+</footer>
     </>
 
   )

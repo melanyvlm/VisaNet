@@ -5,6 +5,19 @@ body{
 *{
     box-sizing: border-box;
 }
+.color-fucsia{
+  color: #CF387A;
+
+}
+.color-yellow{
+  color:#F9CD09;
+}
+.color-black{
+  background-color:rgb(53, 50, 50);
+  color:#fff;
+  text-align: center;
+height:30px;
+}
 /**Estilos de header*/
 .header{
     height:60px;
@@ -64,23 +77,23 @@ font-size:15px;
   .bold{
     font-size:30px;
   }
-  .color-fucsia{
-    color: #CF387A;
-
-  }
-   .color-yellow{
-    color: #F9CD09;
- }
  
-.img{
+ .img{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-width: 400px;
-height:400px;
+  width: 300px; 
+  height:300px;
   justify-content: center;
 }
-
+.img-little{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+width: 200px;
+height:200px;
+  justify-content: center;
+}
 .img1{
   background-image: url(./img/dinero.png);
 
@@ -92,12 +105,37 @@ height:400px;
   background-image: url(./img/motos.png);
 
 }
-
+.img4{
+  background-image: url(./img/vendo.jpg);
+position: relative;
+}
+.img5{
+  background-image: url(./img/vitrna.jpg);
+  position: absolute;
+}
+.img6{
+  background-image: url(./img/at.jpg);
+}
+.img7{
+  background-image: url(./img/chica-dinero.png);
+}
+.div-fucsia{
+background-color: #CF387A;
+}
 .contenedor{
   width:98%;
   margin:auto;
 }
-  
+.yellow-btn{
+background-color: #F9CD09;
+color:#fff;
+text-align: center;
+    border-radius: 1px;
+    width: 300px;
+    height: 50px;
+    border: none;
+font-size:15px;
+}
 /* .flx-contain > div{
   background-color: #f1f1f1;
   margin: 10px;
