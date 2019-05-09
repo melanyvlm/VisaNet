@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './calculateLoan.css';
 import Layout from './layout';
 
@@ -13,13 +14,13 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/#">PIDE PRÉSTAMO</a>
+            <Link className="nav-link" to="/prestamo">PIDE PRÉSTAMO</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/#">RED DE CONTACTOS</a>
+            <Link className="nav-link" to="/contactos">RED DE CONTACTOS</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/#">HAZ CRECER TU NEGOCIO</a>
+            <Link className="nav-link" to="/negocio">HAZ CRECER TU NEGOCIO</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/#">INICIAR SESION</a>
