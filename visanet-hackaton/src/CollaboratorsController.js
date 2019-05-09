@@ -37,6 +37,8 @@ const CollaboratorsController = () => {
 
   return (
     <>
+      <h2>COLABORADORES</h2>
+      
       <select value={profesionOption} onChange={handleProfesionChange} >
         <option value="SELECCIONAR" disabled>PROFESIÓN</option>
         <option value="Administradora">ADMINISTRADORA</option>
