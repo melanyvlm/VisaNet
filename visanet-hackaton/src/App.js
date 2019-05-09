@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.scss';
+import './App.css';
+import LoanControl from './components/LoanControl';
+
 
 function App() {
   return (
     <div className="">
-      <h1>Hackaton interna</h1>
+      <LoanControl />
     </div>
   );
 }
