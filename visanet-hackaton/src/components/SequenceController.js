@@ -1,7 +1,7 @@
 import React from 'react';
 import './sequenceController.css';
 
-const SequenceController = ({ sections, actualSection }) => {
+const SequenceController = ({ sections, actualSection, text }) => {
 
   const components = [];
   for (let index = 0; index < sections; index++) {
@@ -27,10 +27,26 @@ const SequenceController = ({ sections, actualSection }) => {
         return index + 1
       }
     };
+      
+      const textStyle = () => {
+        if (index < actualSection) {
+           return { color: '#CF387A' }
+        }  else if (index === actualSection) {
+          return { color: '#CF387A' }   
+      } else {
+          return { color: '#d9d9d9' }
+        }
+      };
+
+
     components.push(
+      <div>
       <li key={index} style={getStyle()} className="list mr-5">
         {getContent()}
       </li>
+      <span style={textStyle()}>{text[index]}</span>
+      </div>
+    
     )
   }
   return (

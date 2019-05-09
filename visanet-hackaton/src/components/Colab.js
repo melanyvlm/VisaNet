@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Colab = ({ result, filtered }) => {
+const Colab = ({ result }) => {
     return (
     <div className="container">
           <div className="row">

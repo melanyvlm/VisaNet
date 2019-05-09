@@ -23,7 +23,8 @@ const LoanControl = () => {
 
     const sections = [  
         {
-          name: 'calculateLoan', 
+          name: 'calculateLoan',
+          text: 'Calcula tu préstamo', 
           component: <CalculateLoan 
             amount={amount}
             setAmount={setAmount}    
@@ -35,12 +36,14 @@ const LoanControl = () => {
         },
         {
           name: 'SecondScreen',
+          text: 'Ingresa tus datos', 
           component: <SecondScreen 
             setViews={setViews}
           />
         },
         {
           name: 'viewLoans', 
+          text: 'Compara préstamos', 
           component: <ViewLoans
             amount={amount}
             setAmount={setAmount}
@@ -52,6 +55,7 @@ const LoanControl = () => {
         },
         {
           name: 'FourthScreen',
+          text: 'Solicita tu préstamo', 
           component: <FourthScreen
           setViews={setViews}
           amount={amount}
@@ -68,6 +72,7 @@ const LoanControl = () => {
         <SequenceController 
           sections={sections.length}
           actualSection={sections.map(item => item.name).indexOf(views)}
+          text={sections.map(item => item.text)}
         />
         {renderComponents(sections.map(item => item.name).indexOf(views))}
       </>
