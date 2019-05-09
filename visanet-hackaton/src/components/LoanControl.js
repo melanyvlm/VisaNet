@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import ViewLoans from './ViewLoans';
 import CalculateLoan from './CalculateLoan';
+import SequenceController from './SequenceController';
 
 const LoanControl = () => {
     const [amount, setAmount] = useState(1000);
     const [value, setValue] = useState('12');
     const [views, setViews] = useState('calculateLoan');
-    const [options, setOptions] = useState(false )
 
     const calculateValues = (values) => {
         const interest = values * (Number(value)/100);
@@ -19,27 +19,41 @@ const LoanControl = () => {
         setValue(e.target.value)
     };
 
-    switch (views) {
-      case 'calculateLoan':
-        return <CalculateLoan 
-          amount={amount}
-          setAmount={setAmount}    
-          handleChange={handleChange}
-          calculateValues={calculateValues}
-          value={value}
-          setViews={setViews}
-        />
-      case 'viewLoans':
-        return <ViewLoans 
-          amount={amount}
-          setAmount={setAmount}
-          handleChange={handleChange}
-          calculateValues={calculateValues}
-          value={value}
-          setViews={setViews}
-        />     
-        default:
-          return <CalculateLoan />
+    const sections = [  
+        {
+          name: 'calculateLoan', 
+          component: <CalculateLoan 
+            amount={amount}
+            setAmount={setAmount}    
+            handleChange={handleChange}
+            calculateValues={calculateValues}
+            value={value}
+            setViews={setViews}
+          />
+        },
+        {
+          name: 'viewLoans', 
+          component: <ViewLoans
+            amount={amount}
+            setAmount={setAmount}
+            handleChange={handleChange}
+            calculateValues={calculateValues}
+            value={value}
+            setViews={setViews}
+          />
         }
+    ]; 
+
+    const renderComponents = index => (sections.map(item => item.component)[index]);
+    
+    return (
+      <>
+        <SequenceController 
+          sections={sections.length}
+          actualSection={sections.map(item => item.name).indexOf(views)}
+        />
+        {renderComponents(sections.map(item => item.name).indexOf(views))}
+      </>
+    );
 };
 export default LoanControl;
