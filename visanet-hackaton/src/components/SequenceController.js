@@ -34,7 +34,7 @@ const SequenceController = ({ sections, actualSection }) => {
     )
   }
   return (
-    <ul className="list-group list-group-horizontal">{components}</ul>
+    <ul className="list-group list-group-horizontal content-pasos-prestamo">{components}</ul>
   )
 };
 

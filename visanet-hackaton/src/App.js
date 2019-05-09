@@ -5,7 +5,7 @@ import CollaboratorsController from './CollaboratorsController';
 
 const App = () => {
   return (
-   <>
+   <> 
       <LoanControl />
       <CollaboratorsController />
     </>

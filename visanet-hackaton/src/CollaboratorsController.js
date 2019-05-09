@@ -4,14 +4,11 @@ import './collaborators.css';
 import Colab from './components/Colab';
 
 
-
 const CollaboratorsController = () => {
   const [result, setResult] = useState([]);
   const [professionals, setProfessionals] = useState([]);
   const [profesionOption, setProfesionOption] = useState('SELECCIONAR');
   const [experienceOption, setExperienceOption] = useState('SELECCION');
-
-  console.log(result);
 
   useEffect(() => {
     const unsubscribe = firebase.firestore().collection('collaborators').onSnapshot((snap) => {
@@ -31,7 +28,6 @@ const CollaboratorsController = () => {
   const handleProfesionChange = (e) => {
     setProfesionOption(e.target.value);
     setResult(professionals.filter(option => option.profession === e.target.value))
-    console.log('prof filter', professionals.filter(option => option.profession === profesionOption))
   };
 
   const handleExperienceChange = (e) => {
