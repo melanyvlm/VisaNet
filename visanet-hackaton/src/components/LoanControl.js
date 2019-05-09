@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ViewLoans from './ViewLoans';
 import CalculateLoan from './CalculateLoan';
+import SecondScreen from './secondScreen';
+import FourthScreen from './fourthScreen';
 import SequenceController from './SequenceController';
 
 const LoanControl = () => {
@@ -32,6 +34,12 @@ const LoanControl = () => {
           />
         },
         {
+          name: 'SecondScreen',
+          component: <SecondScreen 
+            setViews={setViews}
+          />
+        },
+        {
           name: 'viewLoans', 
           component: <ViewLoans
             amount={amount}
@@ -41,7 +49,16 @@ const LoanControl = () => {
             value={value}
             setViews={setViews}
           />
-        }
+        },
+        {
+          name: 'FourthScreen',
+          component: <FourthScreen
+          setViews={setViews}
+          amount={amount}
+          calculateValues={calculateValues}
+          />
+        },
+        
     ]; 
 
     const renderComponents = index => (sections.map(item => item.component)[index]);

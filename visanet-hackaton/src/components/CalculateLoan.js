@@ -40,7 +40,7 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
           <div>El préstamo será otorgado por la entidad financiera elegída Juntas y VisaNet no es responsable de la gestión del crédito.
           </div>
         </div>
-        <button type="button" onClick={() => setViews('viewLoans')}>SOLICITAR</button>
+        <button type="button" onClick={() => setViews('SecondScreen')}>SOLICITAR</button>
       </div>
     </div> 
   )
