@@ -10,15 +10,49 @@ body{
     height:60px;
 }
   .back-img{
-    background-image: url(./img/emprendedora.jpg);
+    background-image: url(./img/sin.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 95vh;
     justify-content: center;
+    position:relative;
   }
+  .back-img .contenedor{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .back-img h4{
+    font-size: 28px;
+  }
+  .back-img a{
+    display: block;
+    width:350px;
+    text-decoration: none;
+    color:#CF387A;
+    padding:30px;
+    margin-top:30px;
+    border: 3px solid #CF387A;
+    text-align: center;
+    border-radius: 5px;
+font-size:15px;
+  }
+  .margin{
+    padding-left: 40px;
+}
+.margin-phrase{
+  padding-left: 60px;
+}
+.bold{
+  font-weight: bold;
+}
+.pad{
+  padding-top: 40px;
+}
   .btn-service{
-    border: 2px solid #C50A5B;
+    border: 2px solid #CF387A;
     background: transparent;
     padding: 35px;
     border-radius: 5px;
@@ -27,21 +61,49 @@ body{
     font-size: 18px;
     
   }
-  
-  .color-pink{
-    color: #C50A5B;
+  .bold{
+    font-size:30px;
   }
-  .bckg-pink{
-    background: #C50A5B;
+  .color-fucsia{
+    color: #CF387A;
+
   }
-  
-  .color-yellow{
+   .color-yellow{
     color: #F9CD09;
-  }
+ }
+ 
+.img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+width: 400px;
+height:400px;
+  justify-content: center;
+}
+
+.img1{
+  background-image: url(./img/dinero.png);
+
+}
+.img2{
+  background-image: url(./img/info.png);
+}
+.img3{
+  background-image: url(./img/motos.png);
+
+}
+
+.contenedor{
+  width:98%;
+  margin:auto;
+}
   
-  .bckg-yellow{
-    background: #F9CD09;
-  }
-  .text-baner{
-    font-size: 35px;
-  }
+/* .flx-contain > div{
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  width: 400px;
+  height:500px;
+}  */
