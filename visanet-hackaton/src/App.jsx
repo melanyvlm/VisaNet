@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import LoanControl from './components/LoanControl';
 
 const App = () => { 
   return (
@@ -145,6 +146,7 @@ const App = () => {
 </div>
 </div>
 </div>
+<LoanControl />
 
 <footer>
   <div className="color-black ">VISANET PERU</div>
