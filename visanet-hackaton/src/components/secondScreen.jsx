@@ -1,5 +1,5 @@
 import React from 'react';
-const SecondScreen = () => {
+const SecondScreen = ({setViews}) => {
         return (
             <div>
                 <h2>Ingresa tus datos</h2>
@@ -23,7 +23,7 @@ const SecondScreen = () => {
                 <p>CONTRASEÑA</p>
                 <input type="password" pattern="^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,15}$" minLength="6" maxLength="15" title="Debe contener al menos una letra mayúscula, un número y debe ser mayor de 6 dígitos"></input>
                 <input type="checkbox"/><span>NO SOY CLIENTE VISANET</span>
-                <button type="submit">SOLICITAR</button>
+                <button type="submit" onClick={() => setViews('viewLoans')}>SOLICITAR</button>
         </form>
             </div>
 )

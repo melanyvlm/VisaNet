@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-const FourthScreen = () => {
+const FourthScreen = ({ setViews, amount, calculateValues }) => {
     const [state, setState] = useState(15);
     const banks =  ['Banco de Crédito', 'Interbank', 'Banco de la Nación', 'BBVA Continental', 'Banco Pichincha', 'Mi banco', 'Scotiabank'];
     const handleChange = (e) => {
@@ -19,7 +19,7 @@ if(box1.checked && box2.checked){
     return (
             <div>
                 <h2>YA FALTA POCO PARA RECIBIR TU PRÉSTAMO</h2>
-                <span>Cuota</span>
+                <span>Cuota {calculateValues(amount)[2]}</span>
                 <div>Aqui va la cantidad mensuales</div>
                 <span>Resumen del préstamo</span>
                 <div>
@@ -29,9 +29,9 @@ if(box1.checked && box2.checked){
                       <div>Total a pagar</div>
                     </div>
                     <div>
-                      <div>cantidad de estado</div>
-                      <div>cantidad de estado</div>
-                      <div>cantidad de estado</div>
+                      <div>{amount}</div>
+                      <div>{calculateValues(amount)[0]}</div>
+                      <div> {calculateValues(amount)[1]}</div>
                     </div>
                 </div>
                 <form>

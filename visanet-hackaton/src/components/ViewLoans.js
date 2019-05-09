@@ -24,7 +24,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
       <p>Intereses {calculateValues(amount)[0]} a {value} meses</p>
       <p>Monto total: S/ {calculateValues(amount)[1]}</p>
       <p>¿Cuánto voy a pagar? {calculateValues(amount)[2]} mensuales</p>
-      <button type="button" onClick={() => setViews('')}>PIDE TU PRÉSTAMO</button>
+      <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
         
     </div>
 )
