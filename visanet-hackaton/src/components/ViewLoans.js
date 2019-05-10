@@ -52,7 +52,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
           </div>
         
     </div>
-    <div class="container col-8">
+    <div class="container col-8 mb">
     <div class="companies">
 
               <div class="card-body">

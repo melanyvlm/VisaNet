@@ -14,7 +14,7 @@ const Business = () => {
 <div className="img-business "> 
         </div>
 </div>
-<div className="col-10">
+<div className="col-10 mb">
 <h4 className="bold">HAZ CRECER TU NEGOCIO</h4>
 <section className="mt-5">En esta sección encontrás información de tu negocio, tips y recomendaciones para hacerlo crecer y productos seleccionados especialmente para ti.</section>
 <h4 className="bold mt-5">ESTADÍSTICAS DE TU NEGOCIO</h4>

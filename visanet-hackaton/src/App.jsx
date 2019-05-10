@@ -47,18 +47,14 @@ const App = () => {
           <div className="col-md-4">
             <div className="img1 eq img"></div>
 
-            <p className=" text-center">GARCOAS</p>
 
           </div>
           <div className="col-md-4">
             <div className="img3 eq  img" ></div>
-            <p className=" text-center">GARCOAS</p>
 
           </div>
           <div className="col-md-4">
             <div className="img2 eq img"></div>
-
-            <p className=" text-center">GARCOAS</p>
 
           </div>
         </div>

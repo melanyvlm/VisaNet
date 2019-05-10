@@ -22,7 +22,7 @@ const SequenceController = ({ sections, actualSection, text }) => {
     };
     const getContent = () => {
       if (index < actualSection) {
-        return <i class="fas fa-check"></i>
+        return <i className="fas fa-check"></i>
       } else {
         return index + 1
       }

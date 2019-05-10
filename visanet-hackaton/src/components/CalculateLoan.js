@@ -1,5 +1,5 @@
 import React from 'react';
-import './calculateLoan.css';
+import './CalculateLoan.css';
 import Layout from './layout';
 
 const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value, setViews }) => {
@@ -79,11 +79,14 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
             </section>
         </div>
         <h5 className="text-center h5 mt-5">¿Qué necesito para pedir mi préstamo?</h5>
-        <div className="img"></div>
+        <div className="container mb-5">
+          <div className="img03 col-md-6"></div> 
+          <div className="img04 col-md-6"></div> 
+        </div>
         <h5 className="text-center">¿Cómo me entregarán mi dinero?</h5>
-        <div className="container">
-        <div className="img1 col-md-6"></div>
-        <div className="img2 col-md-6"></div>
+        <div className="container mb-5">
+          <div className="img01 col-lg-6"></div>
+          <div className="img02 col-lg-6"></div>
         </div>
         
   </>
