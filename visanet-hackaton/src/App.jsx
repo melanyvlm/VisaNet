@@ -146,10 +146,6 @@ const App = () => {
           </div>
         </div>
       </div>
-
-      <footer>
-        <div className="color-black">VISANET PERU</div>
-      </footer>
     </>
   )
 }
