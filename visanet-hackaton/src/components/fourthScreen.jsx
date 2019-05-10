@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import '../components/fourthScreen.css';
 const FourthScreen = ({ setViews, amount, calculateValues }) => {
     const [state, setState] = useState(15);
     const banks =  ['Banco de Crédito', 'Interbank', 'Banco de la Nación', 'BBVA Continental', 'Banco Pichincha', 'Mi banco', 'Scotiabank'];
@@ -18,21 +19,26 @@ if(box1.checked && box2.checked){
     };
     return (
             <div>
-                <h2>YA FALTA POCO PARA RECIBIR TU PRÉSTAMO</h2>
-                <span>Cuota {calculateValues(amount)[2]}</span>
-                <div>Aqui va la cantidad mensuales</div>
-                <span>Resumen del préstamo</span>
-                <div>
+              <h3>¡YA FALTA POCO PARA RECIBIR TU PRÉSTAMO!</h3>
+              <div className="container">
+                <div className="row">
+                  <p>Cuota</p>
+                  <p>Resumen del préstamo</p>
+                </div>
+                <div className="row">
+                  <div className="cuadrum">{calculateValues(amount)[2]}
+                    <span className="monthText">mensuales</span>
+                </div>
+                  <p>Préstamo</p>
+                  <p>Intereses</p>
+                  <p>Total a pagar</p>
                     <div>
-                      <div>Préstamo</div>
-                      <div>Intereses</div>
-                      <div>Total a pagar</div>
-                    </div>
-                    <div>
-                      <div>{amount}</div>
+                      <div>{amount}hey</div>
                       <div>{calculateValues(amount)[0]}</div>
                       <div> {calculateValues(amount)[1]}</div>
                     </div>
+              </div>
+                
                 </div>
                 <form>
                 <span>DATOS</span>

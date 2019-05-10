@@ -1,10 +1,10 @@
 import React from 'react';
-import './ViewLoan.css';
  import '../App.css';
+ import './ViewLoan.css';
 const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, setViews }) => {
   return (
     <div className="ml-5">
-      <h3 className="color-yellow ">¡FELICITACIONES ANITA!</h3>
+      <h3>¡FELICITACIONES ANITA!</h3>
       <p>TE OFRECEMOS LOS MEJORES PRÉSTAMOS PARA TI</p>
       <div> 
         <img src="../../public/image/filtrar.png" alt="filtrar" />

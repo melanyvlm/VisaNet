@@ -20,7 +20,7 @@ const App = () => {
                   <h4 className="bold"><span className="color-fucsia">SUEÑOS</span> POSIBLES</h4>
                   <div className="margin">
                   </div>
-                  <a href="#" className="bold boldy-size">CONOCE NUESTROS SERVICIOS</a>
+                  <a href="#services" className="bold boldy-size">CONOCE NUESTROS SERVICIOS</a>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ const App = () => {
       </div>
 
       {/* Servicios */}
-      <h4 className="text-center m-5 bold">NUESTROS SERVICIOS</h4>
+      <h4 id="services" className="text-center m-5 bold">NUESTROS SERVICIOS</h4>
       <div className="container">
         <div className="card-group">
           <div className="card img7">
@@ -75,7 +75,7 @@ const App = () => {
               <div className="ml-5">
                 <h5 className="card-title mt-5 ml-5 color-yellow bold">PIDE UN PRÉSTAMO PARA TU </h5>
                 <h5 className="card-title  ml-5 color-yellow bold"> NEGOCIO</h5>
-                <p className="card-text mt-4 ml-5  color-white encuentra">Encuentra préstamos a tu medida, sin tantos
+                <p className="card-text mt-4 ml-5 color-white encuentra">Encuentra préstamos a tu medida, sin tantos
           requisitos y de forma rápida.</p>
                 <Link to="/prestamo" className="btn-service loan-btn find ml-5 mt-3 bold">PIDE TU PRÉSTAMO</Link>
               </div>
@@ -86,8 +86,8 @@ const App = () => {
           <div className="card div-fucsia">
             <div className="card-body">
               <h5 className="card-title mt-5 ml-5 color-yellow bold">ENCUENTRA UN PERSONAL DE CONFIANZA</h5>
-              <p className="card-text mt-5 ml-5 encuentra color-white">Ingresa tu perfil , cuéntanos qué necesitas (proveedores, colaborados) y te conectamos con la persona ideal para tu negocio</p>
-              <Link to="/contactos" className=" find btn-services color-yellow ml-5 bold">INCREMENTA TU RED DE
+              <p className="card-text mt-5 ml-5 color-white encuentra">Ingresa tu perfil , cuéntanos qué necesitas (proveedores, colaborados) y te conectamos con la persona ideal para tu negocio</p>
+              <Link to="/contactos" className="find btn-services color-yellow ml-5 bold mt-4">INCREMENTA TU RED DE
         <p>CONTACTOS</p></Link>
 
             </div>
@@ -100,8 +100,8 @@ const App = () => {
           </div>
           <div className="card div-fucsia">
             <div className="card-body">
-              <h5 className="card-title mt-5 ml-5 color-yellow bold">HAZ CRECER TU NEGOCIO</h5>
-              <p className="card-text enceuntra mt-5 ml-5 color-white"> Te brindamos información del sector de tu negocio y te recomendamos soluciones para hacerlo crecer</p>
+              <h5 className="card-title mt-5 ml-5 color-yellow bold encuentra ">HAZ CRECER TU NEGOCIO</h5>
+              <p className="card-text mt-5 ml-5 color-white"> Te brindamos información del sector de tu negocio y te recomendamos soluciones para hacerlo crecer</p>
               <Link to="/negocio" className="btn-services find color-yellow ml-5 mt-3 bold">HAZ CRECER TU NEGOCIO</Link>
             </div>
           </div>
@@ -146,10 +146,6 @@ const App = () => {
           </div>
         </div>
       </div>
-
-      <footer>
-        <div className="color-black">VISANET PERU</div>
-      </footer>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import firebase from './firebase';
 import './collaborators.css';
 import Colab from './components/Colab';
+import Header from './layout/Header.jsx';
 
 
 const CollaboratorsController = () => {
@@ -37,6 +38,7 @@ const CollaboratorsController = () => {
 
   return (
     <>
+      <Header />
       <h2>COLABORADORES</h2>
       
       <select value={profesionOption} onChange={handleProfesionChange} >

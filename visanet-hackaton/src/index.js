@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Nav from './components/Nav';
 import * as serviceWorker from './serviceWorker';
+import Footer from './layout/Footer';
+
+
 ReactDOM.render(
   <Router>
     <Nav />
+    <Footer />
   </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

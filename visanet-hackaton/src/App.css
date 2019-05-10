@@ -96,7 +96,8 @@ font-size:15px;
       height: 80px;
       font-size: 18px;
       text-align: center;
-padding-top: 20px;
+      padding-top: 20px;
+      
        }
   .boldy-size{
     font-size:50px;
@@ -161,7 +162,8 @@ background-color: #CF387A;
   text-align: center;
   border-radius: 5px;
   width: 250px;
-  height: 80px;
+  height: 60px;
+  padding-top: 20px;
   border: none;
 font-size:17px;
 }
