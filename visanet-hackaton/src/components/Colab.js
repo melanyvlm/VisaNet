@@ -6,7 +6,7 @@ const Colab = ({ result }) => {
           <div className="row">
           {result.map(item => (              
             <div key={item.id} className="col-lg-6 mb-5 d-flex ">
-              <img src={item.image} alt={item.name} className="picture p-2 flex-fill" />
+              <img src={item.image} alt={item.name} style={images} className="picture p-2 flex-fill" />
               <ul className="p-2 flex-fill">
                 <li className="data transform">{item.name} {item.lastname}</li>            
                 <li className="data transform">{item.profession}</li>
@@ -23,3 +23,7 @@ const Colab = ({ result }) => {
     )
 };
 export default Colab;
+
+const images = {
+  objectFit: 'contain'
+}

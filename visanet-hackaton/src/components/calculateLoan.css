@@ -134,9 +134,7 @@
   font-size: 30px;
   font-weight: bold
 }
-.contenedor .resumen-pago{
-  /* text-align: center */
-}
+
 
 .contenedor .tce{
   grid-area: tce
@@ -170,7 +168,7 @@
 .ml1 {
   margin-left: 18%;
 }
-.img01 {
+/* .img01 {
   background-image: url(../img/cont.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -209,4 +207,4 @@
     height: 300px;
     margin-left: 10%;
     margin-top: 5%;
-}
+} */
