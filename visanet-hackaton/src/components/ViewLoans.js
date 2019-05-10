@@ -4,7 +4,7 @@ import React from 'react';
 const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, setViews }) => {
   return (
     <div className="">
-     <div class="container col-8">
+     <div class="container col-8 mt-5">
         <h3 class="color-yellow ">¡FELICITACIONES ANITA!</h3>
         <p class="bold">TE OFRECEMOS LOS MEJORES PRÉSTAMOS PARA TI</p>
     </div>
@@ -39,7 +39,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
         </div>
         <div class="col-4">
                 <p class="light-gray bold ml-5">TIEMPO</p>
-      <select class ="ml-5" value={value} onChange={handleChange}>
+      <select class ="ml-5 select" value={value} onChange={handleChange}>
         <option value="12">12 MESES</option>
         <option value="24">24 MESES</option>
         <option value="36">36 MESES</option>
@@ -102,7 +102,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button" className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>
@@ -131,7 +131,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button" className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>
@@ -160,7 +160,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button" className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>
@@ -189,7 +189,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button" className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>
@@ -218,7 +218,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button" className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>
@@ -247,7 +247,7 @@ const ViewLoans = ({ amount, setAmount, handleChange, calculateValues, value, se
                                                
                                                      </div>
                                                      <div class="col-2">
-                                                     <button type="button" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
+                                                     <button type="button"  className="btn-pink" onClick={() => setViews('FourthScreen')}>PIDE TU PRÉSTAMO</button>
                                                                  </div>      
             
                 </div>

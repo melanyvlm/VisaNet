@@ -8,7 +8,6 @@ const FourthScreen = ({ setViews, amount, calculateValues }) => {
     };    
     
     const checkbox =()=>{
-      setViews('FifthScreen')
         const box1= document.getElementById("check");
         const box2= document.getElementById("checking");
 
@@ -19,34 +18,48 @@ if(box1.checked && box2.checked){
 }
     };
     return (
-            <div>
-              <h3>¡YA FALTA POCO PARA RECIBIR TU PRÉSTAMO!</h3>
-              <div className="container">
-                <div className="row">
-                  <p>Cuota</p>
-                  <p>Resumen del préstamo</p>
-                </div>
-                <div className="row">
-                  <div className="cuadrum">{calculateValues(amount)[2]}
-                    <span className="monthText">mensuales</span>
-                </div>
-                  <p>Préstamo</p>
-                  <p>Intereses</p>
-                  <p>Total a pagar</p>
-                    <div>
-                      <div>{amount}hey</div>
-                      <div>{calculateValues(amount)[0]}</div>
-                      <div> {calculateValues(amount)[1]}</div>
-                    </div>
-              </div>
-                
-                </div>
+<div>
+  <div className="container">
+    <h3 className="h31">¡YA FALTA POCO PARA RECIBIR TU PRÉSTAMO!</h3>
+    <div className="container ">
+      <div className="row">
+        <div className="col-3 align-self-start">
+          <p className="title-cuadrum">Cuota</p>
+        </div>
+        <div className="col-5 align-self-start">
+          <p className="title-cuadrum">Resumen del préstamo</p>
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="col-2 box1">
+          <div className="monthText number">calculateValues(amount)[2]</div>
+          <span className="monthText">mensuales</span>
+        </div>
+        <div className="col margin-cuadrum">
+          <p>Préstamo</p>
+          <div className="num">amount</div>
+        </div>
+        <div className="shortcol">+</div>
+        <div className="col">
+          <p>Intereses</p>
+          <div className="num">calculateValues(amount)[0]</div>
+        </div>
+        <div className="shortcol">=</div>
+        <div className="col margin2">
+          <p>Total a pagar</p>
+          <div className="num2"> calculateValues(amount)[1]</div>
+        </div>
+      </div>
+    </div>
+  </div>
                 <form>
-                <span>DATOS</span>
-                <span>Ingresa el Nº de cuenta donde se depositará tu préstamo</span>
-                <input pattern ="^[0-9]+$" maxLength={state}></input>
-                <span>Banco</span>
-                <select onChange={handleChange}>
+                  <div className="container">
+                <p className="title-inputs type1">DATOS</p>
+                <p className="description">Ingresa el Nº de cuenta donde se depositará tu préstamo</p>
+                <input className="count" pattern ="^[0-9]+$" required="required" maxLength={state}></input>
+                <p className="title-inputs type2">BANCO</p>
+                <div className="select-box">
+                <select className="count" onChange={handleChange}>
                     <option value="15">{banks[0]}</option>
                     <option value="17">{banks[1]}</option>
                     <option value="14">{banks[2]}</option>
@@ -55,20 +68,34 @@ if(box1.checked && box2.checked){
                     <option value="18">{banks[5]}</option>
                     <option value="20">{banks[6]}</option>
                 </select>
-                <input className="check" id="check" type="checkbox"/><span>Acepto<span>términos y condiciones</span></span>
-                <input className="check" id="checking" type="checkbox"/><span>Acepto<span>compartir los datos de ventas de Visanet con la entidad financiera</span></span>
-                <button type="submit" onClick={e=>checkbox()}>RECIBIR MI PRÉSTAMO</button>
-                </form>
-                <span>ATENCIÓN AL CLIENTE:</span>
-                <span>WHATSAPP</span>
-                <div>
-                <div alt="whatsapp">logo whatsapp</div>
-                <span>978927345</span>
                 </div>
-                <span>CALL CENTER</span>
-                <div>
-                <div alt="callCenter">logo whatsapp</div>
-                <span>015673888</span>
+                <div className="firstCheck">
+                 <input id="check" type="checkbox"/>
+                 <label for="check">Acepto <p className="under"> términos y condiciones</p></label>
+                </div>         
+                <div className="secondCheck">
+                 <input id="checking" type="checkbox"/>
+                 <label for="checking">Acepto <p className="under">compartir los datos de ventas de Visanet con la entidad financiera</p></label>
+                </div>                
+                <button type="submit" className="btn-9" onClick={e=>checkbox()}>RECIBIR MI PRÉSTAMO</button>
+                </div>
+                </form>
+                <div className="container">
+                <p className="row justify-content-start title-inputs main">ATENCIÓN AL CLIENTE:</p>
+                <div className="container ">
+                <div className="row">
+                  <div className="col-3 align-self-start">
+                    <p className="title-cuadrum">WHATSAPP</p>
+                    <i className="fab fa-whatsapp"></i>
+<span>978 927 345</span>
+                  </div>
+                  <div className="col-5 align-self-start">
+                    <p className="title-cuadrum">CALL CENTER</p>
+                    <i className="fas fa-headset"></i>
+                    <span>01 567 3888</span>
+                  </div>
+                </div>
+                </div>
                 </div>
             </div>
 )
