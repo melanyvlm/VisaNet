@@ -1,0 +1,22 @@
+.light-gray{
+    color:rgba(184, 187, 194, 0.945);
+}
+.amount-btn{
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+    background-color:  #F9CD09;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+.padd{
+    padding-bottom: 40px;
+}
+.companies{
+    border: 1px solid #F9CD09;
+}
+.font-si{
+    font-size:18px;
+}
