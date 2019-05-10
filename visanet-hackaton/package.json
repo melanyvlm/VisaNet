@@ -1,7 +1,7 @@
 {
   "name": "visanet-hackaton",
   "version": "0.1.0",
-  "homepage": "https://melanyvlm.github.io/VisaNet/visanet-hackaton/public/",
+  "homepage": "https://melanyvlm.github.io/VisaNet/visanet-hackaton/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -20,7 +20,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"  
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
