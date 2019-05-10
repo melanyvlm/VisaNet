@@ -7,7 +7,6 @@ const FifthScreen = () => {
         <div className="container">
         <img src="![one](https://user-images.githubusercontent.com/45085970/57503502-fb2a2100-72b5-11e9-925c-d81dcdb3c802.png)"></img>
         <div className="row">
-        <div className="firstimg"></div>
         <div className="secondimg"></div>
         </div>
         </div>

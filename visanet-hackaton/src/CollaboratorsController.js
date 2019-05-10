@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase from './firebase';
+import { Link } from 'react-router-dom';
 import './collaborators.css';
 import Colab from './components/Colab';
 import Header from './layout/Header.jsx';
@@ -38,10 +39,12 @@ const CollaboratorsController = () => {
 
   return (
     <>
-      <Header />
-      <h2>COLABORADORES</h2>
-      
-      <select value={profesionOption} onChange={handleProfesionChange} >
+      <Header /> 
+      <div className="container mt-5">
+      <Link to="/contactos"><i className="fas fa-arrow-left arrow mb-5"></i></Link>
+      <h4 className="bold mb-5">COLABORADORES</h4>
+      <p className="text1 mb-3">FILTROS</p>
+      <select value={profesionOption} onChange={handleProfesionChange} className="mb-5 mr-3">
         <option value="SELECCIONAR" disabled>PROFESIÓN</option>
         <option value="Administradora">ADMINISTRADORA</option>
         <option value="Contadora">CONTADORA</option>
@@ -62,6 +65,7 @@ const CollaboratorsController = () => {
         <option value="6 años de Experiencia">06 AÑOS</option>
         <option value="15 años de Experiencia">15 AÑOS</option>
       </select>
+      </div>
       <Colab result={result} />
 
     </>

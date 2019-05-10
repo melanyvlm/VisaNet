@@ -3,6 +3,7 @@ import ViewLoans from './ViewLoans';
 import CalculateLoan from './CalculateLoan';
 import SecondScreen from './secondScreen';
 import FourthScreen from './fourthScreen';
+import FifthScreen from './fifthScreen';
 import SequenceController from './SequenceController';
 import Header from '../layout/Header.jsx';
 
@@ -25,7 +26,7 @@ const LoanControl = () => {
     const sections = [  
         {
           name: 'calculateLoan',
-          text: 'Calcula tu préstamo', 
+          text: 'Calcula tu préstamo',
           component: <CalculateLoan 
             amount={amount}
             setAmount={setAmount}    
@@ -63,7 +64,12 @@ const LoanControl = () => {
           calculateValues={calculateValues}
           />
         },
-        
+        {
+          name: 'FifthScreen',
+          text: 'Recibe tu préstamo', 
+          component: <FifthScreen
+          />
+        }      
     ]; 
 
     const renderComponents = index => (sections.map(item => item.component)[index]);
@@ -74,7 +80,7 @@ const LoanControl = () => {
         <SequenceController 
           sections={sections.length}
           actualSection={sections.map(item => item.name).indexOf(views)}
-          text={sections.map(item => item.text)}
+          text={sections.map(item => item.text)}  
         />
         {renderComponents(sections.map(item => item.name).indexOf(views))}
       </>

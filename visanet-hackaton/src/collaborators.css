@@ -17,3 +17,14 @@
     font-size: 0.8rem;
     padding: 5%;
 }
+.arrow {
+    font-size: 40px;
+    color: black;
+}
+select {
+    background-color: #e6e6e6;
+    border-radius: 10%;
+    width: 20%;
+    height: 20%;
+    padding: 1%;
+  }

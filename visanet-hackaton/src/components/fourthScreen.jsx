@@ -8,6 +8,7 @@ const FourthScreen = ({ setViews, amount, calculateValues }) => {
     };    
     
     const checkbox =()=>{
+      setViews('FifthScreen')
         const box1= document.getElementById("check");
         const box2= document.getElementById("checking");
 

@@ -88,7 +88,6 @@ font-size:15px;
   .find{
     position: absolute;
   }
-
      .btn-services{
       border: 1px solid #F9CD09;
       background: transparent;
@@ -103,7 +102,7 @@ font-size:15px;
   .boldy-size{
     font-size:50px;
   }
- 
+
  .img{
   background-position: center;
   background-repeat: no-repeat;
@@ -120,16 +119,17 @@ width: 200px;
 height:200px;
   justify-content: center;
 }
+.bold-size{
+padding: 40px;
+}
 .img1{
-  background-image: url(./img/dinero.png);
-
+  background-image: url(./img/diner.png);
 }
 .img2{
   background-image: url(./img/info.png);
 }
 .img3{
   background-image: url(./img/motos.png);
-
 }
 .img4{
   background-image: url(./img/vendo.jpg);

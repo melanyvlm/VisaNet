@@ -68,10 +68,7 @@ font-weight: 500;
     font-size: 29px;
     font-weight: 900;
 }
-.img{
-    background-image: url(../img/whatsapp.png);
-    height: 20px;
-}
+
 .call{
     height: 22px;
 }

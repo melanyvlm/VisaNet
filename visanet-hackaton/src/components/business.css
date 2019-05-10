@@ -1,0 +1,50 @@
+
+.img-business{
+    background-image: url(../img/growth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px; 
+    height:100px;
+    border-radius: 2px;
+    box-shadow: 0 12px 16px 0 rgba(149, 144, 144, 0.24),0 17px 50px 0 rgba(119, 116, 116, 0.16);
+    justify-content: center;
+}
+.green-div{
+    background-color: #6AC259;
+}
+.green-div2{
+    background-color: #589F4A;
+}
+.gray{
+    background-color:#C8C6CC;
+}
+.blue{
+    background-color:#005AD4;
+}
+.dark-blue{
+    background-color:#0C4DA5;
+}
+.orange{
+    background-color: #E67500;
+}
+.dark-orange{
+    background-color: #C36C13;
+
+}
+.gross-div{
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color:#fff;
+}
+.square{
+    height: 20px;
+}
+.little-div{
+height: 30px;
+width: 30px;
+}
+.mb {
+    margin-bottom: 10%;
+}
