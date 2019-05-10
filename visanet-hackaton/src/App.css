@@ -81,21 +81,27 @@ font-size:15px;
     width: 350px;
     height: 50px;
     font-size: 18px;
-     }
+  }
+  .encuentra{
+    position: relative;
+  }
+  .find{
+    position: absolute;
+  }
      .btn-services{
       border: 1px solid #F9CD09;
       background: transparent;
       border-radius: 5px;
       width: 250px;
-      height: 65px;
+      height: 80px;
       font-size: 18px;
       text-align: center;
-      
+padding-top: 20px;
        }
   .boldy-size{
     font-size:50px;
   }
- 
+
  .img{
   background-position: center;
   background-repeat: no-repeat;
@@ -114,14 +120,12 @@ height:200px;
 }
 .img1{
   background-image: url(./img/dinero.png);
-
 }
 .img2{
   background-image: url(./img/info.png);
 }
 .img3{
   background-image: url(./img/motos.png);
-
 }
 .img4{
   background-image: url(./img/vendo.jpg);
@@ -171,12 +175,3 @@ text-align: center;
     border: none;
 font-size:15px;
 }
-/* .flx-contain > div{
-  background-color: #f1f1f1;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  width: 400px;
-  height:500px;
-}  */
