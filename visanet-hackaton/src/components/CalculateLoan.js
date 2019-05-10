@@ -1,5 +1,5 @@
 import React from 'react';
-import './calculateLoan.css';
+import './CalculateLoan.css';
 import Layout from './layout';
 
 const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value, setViews }) => {
