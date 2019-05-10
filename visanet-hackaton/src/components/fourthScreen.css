@@ -75,3 +75,44 @@ font-weight: 500;
 .call{
     height: 22px;
 }
+.title-inputs{
+    font-weight: 700;
+    font-size: 22px;
+}
+.type1{
+    margin-top: 80px;
+}
+.type2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.description{
+    font-weight: 700;
+}
+.count{
+    border:solid 1px #F9CD09;
+background-color: #ffffff;
+width: 50%;
+height: 35px;
+margin-bottom: 20px;
+}
+ 
+  .under{
+      text-decoration: underline;
+      display: inline-block;
+  color: rgb(50, 142, 228)
+    }
+    button{
+        background-color: #F9CD09;
+        border-radius: 7px;
+  padding: 12px 55px 12px 55px;
+  font-weight: 550;
+  outline:none;
+  border:none;
+  margin-top: 65px;
+font-size: 16px;
+    }
+    .main{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }

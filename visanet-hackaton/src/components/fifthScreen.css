@@ -1,0 +1,10 @@
+.firstimg{
+    background-image: url(../img/one.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    justify-content: center;
+    position:relative;
+}

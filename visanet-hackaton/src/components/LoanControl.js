@@ -4,6 +4,7 @@ import CalculateLoan from './CalculateLoan';
 import SecondScreen from './secondScreen';
 import FourthScreen from './fourthScreen';
 import SequenceController from './SequenceController';
+import Header from '../layout/Header.jsx';
 
 const LoanControl = () => {
     const [amount, setAmount] = useState(1000);
@@ -69,6 +70,7 @@ const LoanControl = () => {
     
     return (
       <>
+        <Header />
         <SequenceController 
           sections={sections.length}
           actualSection={sections.map(item => item.name).indexOf(views)}

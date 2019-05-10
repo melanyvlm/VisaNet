@@ -12,5 +12,4 @@ const Nav = () => (
     <Route path="/contactos" component={CollaboratorsController} />
   </>
 );
-
 export default Nav;
