@@ -6,11 +6,11 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
   return (
    <>
     <Layout />
-    <p className="pink ml-5 mb-4 mt-5">Calcula tu préstamo</p>
-    <div className="contenedor">
+    <p className="pink ml-5 mb-4 mt-5 pink">Calcula tu préstamo</p>
+    <div className="contenedor ">
             <section className="cuanto-dinero">
               <span>¿Cuantó dinero necesitas?</span>
-              <div class="cuanto-dinero-element">
+              <div className="cuanto-dinero-element mt-3">
                 <button className="more"
                   type="button"
                   onClick={() => {
@@ -22,7 +22,7 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
                   }}> -
                 </button>
 
-                <span>{amount}</span>
+                <span>S/ {amount}</span>
                 <button className="less" type="button" onClick={() => setAmount(amount + 500)}> +
                 </button>
               </div>
@@ -30,9 +30,11 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
 
             <section className="cuanto-tiempo">
               <span>¿Cuantó tiempo?</span>
-              <div>
-              <select value={value} onChange={handleChange}>
+              <div className="mt-3">
+              <select className="select" value={value} onChange={handleChange}>
+                <option value="6">06 MESES</option>
                 <option value="12">12 MESES</option>
+                <option value="18">18 MESES</option>
                 <option value="24">24 MESES</option>
                 <option value="36">36 MESES</option>
               </select>
@@ -41,14 +43,14 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
 
             <section className="debo-pagar">
               <span>Debo pagar</span>
-              <p className="p-debo-pagar">S/. {calculateValues(amount)[2]}</p>
-              <p>Mensuales</p>              
+              <p className="p-debo-pagar mt-1">S/. {calculateValues(amount)[2]}</p>
+              <p className="month">Mensuales</p>              
             </section>
 
             <section className="resumen-pago">                
                 <span>Resumen de pago:</span>
 
-                <div className="resumen-pago-element">
+                <div className="resumen-pago-element mt-3">
                   <div className="prestamo">                    
                     <span>Préstamo: {amount}</span>
                   </div>
@@ -56,7 +58,7 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
                   <span>Interes: {calculateValues(amount)[0]}</span>
                   </div>
                   <div className="total-pagar">
-                    <span>Total a pagar: S/ {calculateValues(amount)[1]}</span>
+                    <span>Total a pagar:  S/{calculateValues(amount)[1]}</span>
                   </div>                      
                 </div>  
 
@@ -64,11 +66,11 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
             </section>
 
             <section className="tce">
-              <span>Préstamo basado en TCEA 12%</span>
+              <span className="tce1">Préstamo basado en TCEA 12%</span>
             </section>
 
             <section className="importante">
-              <p>IMPORTANTE</p>
+              <p className="import"> IMPORTANTE</p>
               <p>El préstamo será otorgado por la entidad financiera elegída Juntas y VisaNet no es responsable de la gestión del crédito.</p>
             </section>
 

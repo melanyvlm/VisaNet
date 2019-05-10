@@ -25,7 +25,7 @@ const LoanControl = () => {
     const sections = [  
         {
           name: 'calculateLoan',
-          text: 'Calcula tu préstamo', 
+          text: 'Calcula tu préstamo',
           component: <CalculateLoan 
             amount={amount}
             setAmount={setAmount}    
@@ -74,7 +74,7 @@ const LoanControl = () => {
         <SequenceController 
           sections={sections.length}
           actualSection={sections.map(item => item.name).indexOf(views)}
-          text={sections.map(item => item.text)}
+          text={sections.map(item => item.text)}  
         />
         {renderComponents(sections.map(item => item.name).indexOf(views))}
       </>

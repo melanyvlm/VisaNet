@@ -16,13 +16,13 @@ const SequenceController = ({ sections, actualSection, text }) => {
         }
       } else {
         return {
-          backgroundColor: '#d9d9d9'
+          backgroundColor: '#cccccc'
         }
       }
     };
     const getContent = () => {
       if (index < actualSection) {
-        return 'check'
+        return <i class="fas fa-check"></i>
       } else {
         return index + 1
       }
@@ -34,14 +34,14 @@ const SequenceController = ({ sections, actualSection, text }) => {
         }  else if (index === actualSection) {
           return { color: '#CF387A' }   
       } else {
-          return { color: '#d9d9d9' }
+          return { color: '#cccccc' }
         }
       };
 
 
     components.push(
       <div>
-      <li key={index} style={getStyle()} className="list mr-5">
+      <li key={index} style={getStyle()} className="list ml">
         {getContent()}
       </li>
       <span style={textStyle()}>{text[index]}</span>
@@ -50,7 +50,7 @@ const SequenceController = ({ sections, actualSection, text }) => {
     )
   }
   return (
-    <ul className="list-group list-group-horizontal content-pasos-prestamo">{components}</ul>
+    <ul className="list-group list-group-horizontal content-pasos-prestamo ">{components}</ul>
   )
 };
 
