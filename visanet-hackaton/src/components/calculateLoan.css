@@ -135,8 +135,7 @@
   font-weight: bold
 }
 .contenedor .resumen-pago{
-  grid-area: resumen-pago;
-  text-align: center
+  /* text-align: center */
 }
 
 .contenedor .tce{
@@ -167,4 +166,20 @@
 .importante p{
   text-align: justify;  
   font-size: 13px;
+}
+.ml1 {
+  margin-left: 18%;
+}
+/* .img {
+  background-image: url(../img/req.png);
+  width: 100%;
+  height: 50%;
+} */
+.img1 {
+  background-image: url(../img/cont.png);
+  width: 100%;
+  height: 50%;
+}
+.img2 {
+  background-image: url(../img/dinero.png); 
 }

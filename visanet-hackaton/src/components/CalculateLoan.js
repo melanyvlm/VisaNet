@@ -6,7 +6,7 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
   return (
    <>
     <Layout />
-    <p className="pink ml-5 mb-4 mt-5 pink">Calcula tu préstamo</p>
+    <p className="pink ml1 mb-4 mt-5 pink">Calcula tu préstamo</p>
     <div className="contenedor ">
             <section className="cuanto-dinero">
               <span>¿Cuantó dinero necesitas?</span>
@@ -77,8 +77,15 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
             <section className="button-solicitar">
               <button type="button" className="btn-solicitar"  onClick={() => setViews('SecondScreen')}>SOLICITAR</button>
             </section>
-
         </div>
+        <h5 className="text-center h5 mt-5">¿Qué necesito para pedir mi préstamo?</h5>
+        <div className="img"></div>
+        <h5 className="text-center">¿Cómo me entregarán mi dinero?</h5>
+        <div className="container">
+        <div className="img1 col-md-6"></div>
+        <div className="img2 col-md-6"></div>
+        </div>
+        
   </>
   )
 };
