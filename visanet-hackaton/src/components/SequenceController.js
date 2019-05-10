@@ -44,7 +44,7 @@ const SequenceController = ({ sections, actualSection, text }) => {
       <li key={index} style={getStyle()} className="list ml">
         {getContent()}
       </li>
-      <span style={textStyle()}>{text[index]}</span>
+      <span  className="font" style={textStyle()}>{text[index]}</span>
       </div>
     
     )
