@@ -6,9 +6,72 @@ h3{
     background-color: #D3D3D3;
     font-size: 40px; 
     font-weight: 700;
+    border-radius: 7px;
 }
 .monthText{
-    font-size: 20px; 
+    font-size: 17px; 
 display: block;
-font-weight: 700;
+font-weight: 900;
+}
+.cuadrum2{
+    background-color: #D3D3D3;
+    font-size: 20px; 
+    font-weight: 500;
+    margin-left:100px;
+    border-radius: 7px;
+};
+.column{
+    display: inline-block;
+}
+.title-cuadrum{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.col{
+    background-color: #D3D3D3;
+    padding-top: 30px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.shortcol{
+    background-color: #D3D3D3;
+    color:#F9CD09;
+    font-weight: 800;
+    font-size: 30px;
+padding-top: 55px;
+padding-right: 35px;
+
+}
+.box1{
+    border-radius: 5px;
+padding: 25px 10px 25px 35px;
+background-color: #D3D3D3;
+}
+.margin-cuadrum{
+    margin-left:40px;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 60px;
+}
+.margin2{
+    border-radius: 0px 5px 5px 0px;
+}
+.number{
+    font-size: 24px;
+}
+.num{
+    font-size: 24px;
+font-weight: 500;
+}
+.num2{
+    font-size: 29px;
+    font-weight: 900;
+}
+.img{
+    background-image: url(../img/whatsapp.png);
+    height: 20px;
+}
+.call{
+    height: 22px;
 }

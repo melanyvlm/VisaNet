@@ -1,7 +1,34 @@
 import React from 'react';
 import './secondScreen.css'
+import { Link } from 'react-router-dom';
 const SecondScreen = ({setViews}) => {
         return (
+          <>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="/#" >MUJER EMPRENDEDORA</a>      
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <Link className="nav-link" to="/prestamo">PIDE PRÉSTAMO</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/contactos">RED DE CONTACTOS</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/negocio">HAZ CRECER TU NEGOCIO</Link>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/#">INICIAR SESION</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/#">REGÍSTRATE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
             <form onSubmit={() => setViews('viewLoans')} className="container">
               <div className="row justify-content-center mainTitle">INGRESA TUS DATOS</div>
               <div className="row justify-content-center">
@@ -58,6 +85,7 @@ const SecondScreen = ({setViews}) => {
                 <button type="submit" className="request">SOLICITAR</button>
               </div>
             </form>
+            </>
 )
 };
 export default SecondScreen;
