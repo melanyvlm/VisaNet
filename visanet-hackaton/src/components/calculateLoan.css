@@ -160,7 +160,9 @@
 .import {
   font-weight: 700;
 }
-
+.align{
+  align-content: center;
+}
 .importante p{
   text-align: justify;  
   font-size: 13px;
@@ -168,43 +170,20 @@
 .ml1 {
   margin-left: 18%;
 }
-/* .img01 {
+
+.loan-need{
+  border: 1px solid #F9CD09;
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  font-size: 18px;
+  padding-top: 20px;
+  }
+.img-cont{
   background-image: url(../img/cont.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px; 
-    height: 300px;
-    margin-left: 10%;
-    margin-top: 5%;
+  background-repeat: no-repeat;
 }
-.img02 {
-  background-image: url(../img/money.png); 
-  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 250px; 
-    height: 300px;
-    margin-left: 10%;
-    margin-top: 5%;
+.img-money{
+  background-image: url(../img/money.png);
+  background-repeat: no-repeat;
 }
-.img03 {
-  background-image: url(../img/req01.png); 
-  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    height: 300px;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-.img04 {
-  background-image: url(../img/be01.png); 
-  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
-    height: 300px;
-    margin-left: 10%;
-    margin-top: 5%;
-} */

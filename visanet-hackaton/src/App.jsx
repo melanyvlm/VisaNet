@@ -8,11 +8,11 @@ const App = () => {
     <>
       <main>
         <div className="container-fluid">
-          <div className="row back-img">
+          <div className="row back-img ">
             <div className="col-6">
               <div className="pad">
-                <h2 className="bold margin-phrase">MUJER</h2>
-                <h2 className="bold margin-phrase">EMPRENDEDORA</h2>
+                <h2 className="bold margin-phrase ml-3">MUJER</h2>
+                <h2 className="bold margin-phrase ml-3">EMPRENDEDORA</h2>
               </div>
               <div className="contenedor ">
                 <div className="margin-phrase">
@@ -35,8 +35,9 @@ const App = () => {
               </div>
             </div>
           </div>
-          <p className="color-fucsia text-center bold bold-size m-4">"La plataforma colaborativa que busca el empoderamiento femenino mediante el crecimiento económico de las mujeres emprendedoras"</p>
-
+          <div className="container">
+          <h4 className="color-fucsia text-center bold bold-size mt-5 m-4">"La plataforma colaborativa que busca el empoderamiento femenino mediante el crecimiento económico de las mujeres emprendedoras"</h4>
+          </div>
         </div>
       </main>
       {/* Segunda section */}
@@ -46,16 +47,12 @@ const App = () => {
 
           <div className="col-md-4">
             <div className="img1 eq img"></div>
-
-
           </div>
           <div className="col-md-4">
             <div className="img3 eq  img" ></div>
-
           </div>
           <div className="col-md-4">
             <div className="img2 eq img"></div>
-
           </div>
         </div>
       </div>
