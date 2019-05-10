@@ -8,20 +8,19 @@ const FourthScreen = ({ setViews, amount, calculateValues }) => {
     };    
     
     const checkbox =()=>{
-      setViews('FifthScreen')
         const box1= document.getElementById("check");
         const box2= document.getElementById("checking");
 
 if(box1.checked && box2.checked){
-    alert("cool");
-}else{
+   setViews('FifthScreen');
+} else{
     alert("not cool");
-}
+};
     };
     return (
 <div>
   <div className="container">
-    <h3>¡YA FALTA POCO PARA RECIBIR TU PRÉSTAMO!</h3>
+    <h3 className="h31">¡YA FALTA POCO PARA RECIBIR TU PRÉSTAMO!</h3>
     <div className="container ">
       <div className="row">
         <div className="col-3 align-self-start">
@@ -33,22 +32,22 @@ if(box1.checked && box2.checked){
       </div>
       <div className="row justify-content-center">
         <div className="col-2 box1">
-          <div className="monthText number">{/*calculateValues(amount)[2]*/}1,200</div>
+          <div className="monthText number">{calculateValues(amount)[2]}</div>
           <span className="monthText">mensuales</span>
         </div>
         <div className="col margin-cuadrum">
           <p>Préstamo</p>
-          <div className="num">{/*amount*/1000}</div>
+          <div className="num">{amount}</div>
         </div>
         <div className="shortcol">+</div>
         <div className="col">
           <p>Intereses</p>
-          <div className="num">{/*calculateValues(amount)[0]*/1000}</div>
+          <div className="num">{calculateValues(amount)[0]}</div>
         </div>
         <div className="shortcol">=</div>
         <div className="col margin2">
           <p>Total a pagar</p>
-          <div className="num2"> {/*calculateValues(amount)[1]*/1000}</div>
+          <div className="num2">{calculateValues(amount)[1]}</div>
         </div>
       </div>
     </div>
@@ -78,21 +77,21 @@ if(box1.checked && box2.checked){
                  <input id="checking" type="checkbox"/>
                  <label for="checking">Acepto <p className="under">compartir los datos de ventas de Visanet con la entidad financiera</p></label>
                 </div>                
-                <button type="submit" onClick={e=>checkbox()}>RECIBIR MI PRÉSTAMO</button>
+                <button type="submit" className="btn-9" onClick={e=>checkbox()}>RECIBIR MI PRÉSTAMO</button>
                 </div>
                 </form>
                 <div className="container">
                 <p className="row justify-content-start title-inputs main">ATENCIÓN AL CLIENTE:</p>
                 <div className="container ">
-                <div className="row">
+                <div className="row space">
                   <div className="col-3 align-self-start">
                     <p className="title-cuadrum">WHATSAPP</p>
-                    <i class="fab fa-whatsapp"></i>
-<span>978 927 345</span>
+                    <div><i className="fab fa-whatsapp"></i></div>
+<div>978 927 345</div>
                   </div>
                   <div className="col-5 align-self-start">
                     <p className="title-cuadrum">CALL CENTER</p>
-                    <i class="fas fa-headset"></i>
+                    <i className="fas fa-headset"></i>
                     <span>01 567 3888</span>
                   </div>
                 </div>

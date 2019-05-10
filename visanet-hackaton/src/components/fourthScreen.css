@@ -1,7 +1,8 @@
-h3{
+.h31{
     color: #F9CD09;
     font-weight: 600;
 }
+
 .cuadrum{
     background-color: #D3D3D3;
     font-size: 40px; 
@@ -68,7 +69,6 @@ font-weight: 500;
     font-size: 29px;
     font-weight: 900;
 }
-
 .call{
     height: 22px;
 }
@@ -90,7 +90,7 @@ font-weight: 500;
     border:solid 1px #F9CD09;
 background-color: #ffffff;
 width: 50%;
-height: 35px;
+height: 50px;
 margin-bottom: 20px;
 }
  
@@ -99,7 +99,7 @@ margin-bottom: 20px;
       display: inline-block;
   color: rgb(50, 142, 228)
     }
-    button{
+    .btn-9{
         background-color: #F9CD09;
         border-radius: 7px;
   padding: 12px 55px 12px 55px;
@@ -112,4 +112,7 @@ font-size: 16px;
     .main{
         margin-top: 50px;
         margin-bottom: 20px;
+    }
+    .space{
+        margin-bottom: 50px;
     }

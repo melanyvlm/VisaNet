@@ -23,3 +23,17 @@
 .mb {
     margin-bottom: 10%;
 }
+.select {
+    background-color: #e6e6e6;
+    border-radius: 10%;
+    width: 55%;
+    padding: 2%;
+  }
+  .btn-pink {
+
+        border-radius: 10px;
+        background-color: #CF387A;
+        padding: 8px 10px;
+        color: #ffffff;
+        border: none;
+  }

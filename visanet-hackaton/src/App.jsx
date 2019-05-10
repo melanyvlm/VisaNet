@@ -104,7 +104,7 @@ const App = () => {
       {/* Tercera sección */}
 
       <h4 className="text-center m-5 bold black"> Y TAMBIÉN TE OFRECEMOS SOLUCIONES PARA INCREMENTAR TUS VENTAS</h4>
-      <div className="container">
+      <div className="container margin-btn">
         <div className="row">
 
           <div className="col-md-4">
