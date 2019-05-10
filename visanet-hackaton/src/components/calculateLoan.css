@@ -48,29 +48,106 @@
   height: 100%;
 }
 
-.content-pasos-prestamo{
-  height: 100%;
-  width: 80%;
-  margin: auto;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items:center;
-  padding: 5px 25px;
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "cuanto-dinero    cuanto-tiempo   debo-pagar   resumen-pago "
+                      "tce                 tce            tce          button-solicitar"
+                      "importante         importante      importante  importante";
 }
-.paso1, .paso2, .paso3, .paso4, .paso5{
-background-color: #CF387A;
-color: #ffffff;
-width: 50px;
-height: 50px;
--moz-border-radius: 50%;
--webkit-border-radius: 50%;
-border-radius: 50%;
-display: flex;
-justify-content:center;
-align-items:center;
-padding: 5px 25px;
-margin: 2%
+
+.contenedor .cuanto-dinero{
+  grid-area: cuanto-dinero;
+  text-align: center;  
+}
+
+.cuanto-dinero-element{
+  display: flex;
+  justify-content: center;  
+  color: #333333
+}
+
+.cuanto-dinero-element .more{
+background: #F9CD09;
+padding: 5px 20px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px
+}
+
+.cuanto-dinero-element .less{
+  background: #F9CD09;
+  padding: 5px 20px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px
+  }
+
+
+.cuanto-dinero-element span{
+  background: #999999;
+  padding: 5px 20px;
+  color: #ffffff;
+
+  }
+
+
+.resumen-pago-element{
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  display: flex;  
+  flex-direction: row; 
+  border-radius: 5px
+}
+
+.prestamo, .interes, .total-pagar {
+  background: #999999;
+  width: 100%;
+  padding: 5px;
+}
+
+.contenedor .cuanto-tiempo{
+  grid-area: cuanto-tiempo;
+  text-align: center;
+}
+
+.contenedor .debo-pagar{
+  grid-area: debo-pagar;
+  text-align: center
+}
+
+.debo-pagar .p-debo-pagar{
+  font-size: 30px;
+  font-weight: bold
+}
+.contenedor .resumen-pago{
+  grid-area: resumen-pago;
+  text-align: center
+}
+
+.contenedor .tce{
+  grid-area: tce
+}
+
+
+
+
+.contenedor .button-solicitar{
+  grid-area: button-solicitar;
+
+}
+
+.btn-solicitar{
+  border-radius: 10px;
+  background-color: #CF387A;
+  padding: 10px  ;
+  color: #ffffff  
+}
+
+.importante p{
+  text-align: justify;  
 }
