@@ -2,6 +2,7 @@ import React from 'react';
 import './secondScreen.css'
 const SecondScreen = ({setViews}) => {
         return (
+          <>
             <form onSubmit={() => setViews('viewLoans')} className="container mt-5 pt-5 mb-5">
               <div className="row justify-content-center mainTitle">INGRESA TUS DATOS</div>
               <div className="row justify-content-center">
@@ -58,6 +59,7 @@ const SecondScreen = ({setViews}) => {
                 <button type="submit" className="request">SOLICITAR</button>
               </div>
             </form>
+            </>
 )
 };
 export default SecondScreen;

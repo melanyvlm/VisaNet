@@ -12,10 +12,10 @@ const FourthScreen = ({ setViews, amount, calculateValues }) => {
         const box2= document.getElementById("checking");
 
 if(box1.checked && box2.checked){
-    alert("cool");
-}else{
+   setViews('FifthScreen');
+} else{
     alert("not cool");
-}
+};
     };
     return (
 <div>
@@ -32,22 +32,22 @@ if(box1.checked && box2.checked){
       </div>
       <div className="row justify-content-center">
         <div className="col-2 box1">
-          <div className="monthText number">calculateValues(amount)[2]</div>
+          <div className="monthText number">{calculateValues(amount)[2]}</div>
           <span className="monthText">mensuales</span>
         </div>
         <div className="col margin-cuadrum">
           <p>Préstamo</p>
-          <div className="num">amount</div>
+          <div className="num">{amount}</div>
         </div>
         <div className="shortcol">+</div>
         <div className="col">
           <p>Intereses</p>
-          <div className="num">calculateValues(amount)[0]</div>
+          <div className="num">{calculateValues(amount)[0]}</div>
         </div>
         <div className="shortcol">=</div>
         <div className="col margin2">
           <p>Total a pagar</p>
-          <div className="num2"> calculateValues(amount)[1]</div>
+          <div className="num2">{calculateValues(amount)[1]}</div>
         </div>
       </div>
     </div>
@@ -83,11 +83,11 @@ if(box1.checked && box2.checked){
                 <div className="container">
                 <p className="row justify-content-start title-inputs main">ATENCIÓN AL CLIENTE:</p>
                 <div className="container ">
-                <div className="row">
+                <div className="row space">
                   <div className="col-3 align-self-start">
                     <p className="title-cuadrum">WHATSAPP</p>
-                    <i className="fab fa-whatsapp"></i>
-<span>978 927 345</span>
+                    <div><i className="fab fa-whatsapp"></i></div>
+<div>978 927 345</div>
                   </div>
                   <div className="col-5 align-self-start">
                     <p className="title-cuadrum">CALL CENTER</p>

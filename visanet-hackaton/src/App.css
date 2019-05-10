@@ -64,6 +64,9 @@ font-size:15px;
   .margin{
     padding-left: 40px;
 }
+.margin-btn{
+  padding-bottom:80px;
+}
 .margin-phrase{
   padding-left: 60px;
 }

@@ -3,12 +3,14 @@ import './fifthScreen.css'
 const FifthScreen = () => {
     return(
         <>
+  
         <h1>¿LISTA PARA EL DESEMBOLSO?</h1>
         <div className="container">
         <img src="![one](https://user-images.githubusercontent.com/45085970/57503502-fb2a2100-72b5-11e9-925c-d81dcdb3c802.png)" alt="imagen"></img>
         <div className="row">
-        <div className="firstimg"></div>
-        <div className="secondimg"></div>
+        <div className="img-cont img ml-5"></div>
+        <div className="img-money img">
+        </div>
         </div>
         </div>
         <div className="container">
