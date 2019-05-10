@@ -1,7 +1,7 @@
 import React from 'react';
 import './calculateLoan.css';
 import Layout from './layout';
-
+import './ViewLoan.css';
 const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value, setViews }) => {
   return (
    <>
@@ -79,13 +79,54 @@ const CalculateLoan = ({amount, setAmount, handleChange, calculateValues, value,
             </section>
         </div>
         <h5 className="text-center h5 mt-5">¿Qué necesito para pedir mi préstamo?</h5>
-        <div className="img"></div>
-        <h5 className="text-center">¿Cómo me entregarán mi dinero?</h5>
-        <div className="container">
-        <div className="img1 col-md-6"></div>
-        <div className="img2 col-md-6"></div>
+        <div className="container mt-5">
+        <div class="row">
+  <div class="col-sm-6">
+
+      <div className="loan-need">
+      <section>
+        <p className="text-center color-yellow bold mt-3">REQUISITOS</p>
+        <ul className="mt-3">
+        <li> Ser mayor de 18 años</li>
+          <li>Recibo de Agua o Luz </li>
+          <li>DNI de la solicitante y copia</li>
+        </ul>
+        </section>
         </div>
-        
+
+  </div>
+  <div class="col-sm-6">
+    <div className="loan-need">  
+     <section>
+        <p className="text-center color-yellow bold mt-3">BENEFICIOS</p>
+        <ul>
+        <li> Facilidades en canales de cobro</li>
+          <li>Rápido y sin tanto papeleo </li>
+          <li>Tus ventas con VISA son el sustento crediticio</li>
+        </ul>
+        </section>
+  </div>
+  </div>
+</div>
+</div>
+
+        <h5 className="text-center mt-5">¿Cómo me entregarán mi dinero?</h5>
+        <div className="container mt-5 ">
+        <div class="row">
+  <div class="col-sm-6 ">
+<div className="img-cont img">
+
+</div>
+
+  </div>
+  <div class="col-sm-6">
+  <div className="img-money img">
+
+</div>
+  </div>
+</div>
+</div>
+
   </>
   )
 };
