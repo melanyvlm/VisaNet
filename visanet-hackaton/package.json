@@ -1,7 +1,7 @@
 {
   "name": "visanet-hackaton",
   "version": "0.1.0",
-  "homepage": "https://melanyvlm.github.io/VisaNet/visanet-hackaton",
+  "homepage": "https://melanyvlm.github.io/VisaNet/visanet-hackaton/public/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
