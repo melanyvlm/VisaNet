@@ -86,6 +86,25 @@ font-weight: 500;
 .description{
     font-weight: 700;
 }
+.under{
+    text-decoration: underline;
+    display: inline-block;
+color: rgb(50, 142, 228)
+  }
+  .btn-9{
+      background-color: #F9CD09;
+      border-radius: 7px;
+padding: 12px 55px 12px 55px;
+font-weight: 550;
+outline:none;
+border:none;
+margin-top: 65px;
+font-size: 16px;
+  }
+  .main{
+      margin-top: 50px;
+      margin-bottom: 20px;
+  }
 .count{
     border:solid 1px #F9CD09;
 background-color: #ffffff;
@@ -94,22 +113,3 @@ height: 35px;
 margin-bottom: 20px;
 }
  
-  .under{
-      text-decoration: underline;
-      display: inline-block;
-  color: rgb(50, 142, 228)
-    }
-    .btn-9{
-        background-color: #F9CD09;
-        border-radius: 7px;
-  padding: 12px 55px 12px 55px;
-  font-weight: 550;
-  outline:none;
-  border:none;
-  margin-top: 65px;
-font-size: 16px;
-    }
-    .main{
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
