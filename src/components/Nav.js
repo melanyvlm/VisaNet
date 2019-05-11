@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import LoanControl from './LoanControl';
-import App from '../App';
+import App from '../App.jsx';
 import CollaboratorsController from '../CollaboratorsController';
 import Contacts from './Contacts';
 import Business from './Business';

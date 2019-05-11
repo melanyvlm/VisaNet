@@ -32,22 +32,22 @@ if(box1.checked && box2.checked){
       </div>
       <div className="row justify-content-center">
         <div className="col-2 box1">
-          <div className="monthText number">calculateValues(amount)[2]</div>
+          <div className="monthText number">{calculateValues(amount)[2]}</div>
           <span className="monthText">mensuales</span>
         </div>
         <div className="col margin-cuadrum">
           <p>Préstamo</p>
-          <div className="num">amount</div>
+          <div className="num">{amount}</div>
         </div>
         <div className="shortcol">+</div>
         <div className="col">
           <p>Intereses</p>
-          <div className="num">calculateValues(amount)[0]</div>
+          <div className="num">{calculateValues(amount)[0]}</div>
         </div>
         <div className="shortcol">=</div>
         <div className="col margin2">
           <p>Total a pagar</p>
-          <div className="num2"> calculateValues(amount)[1]</div>
+          <div className="num2">{ calculateValues(amount)[1]}</div>
         </div>
       </div>
     </div>
