@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/VisaNet/visanet-hackaton/static/css/main.babf44c5.chunk.css",
+    "main.js": "/VisaNet/visanet-hackaton/static/js/main.e4eea95b.chunk.js",
+    "main.js.map": "/VisaNet/visanet-hackaton/static/js/main.e4eea95b.chunk.js.map",
+    "runtime~main.js": "/VisaNet/visanet-hackaton/static/js/runtime~main.49364b00.js",
+    "runtime~main.js.map": "/VisaNet/visanet-hackaton/static/js/runtime~main.49364b00.js.map",
+    "static/js/2.4808782a.chunk.js": "/VisaNet/visanet-hackaton/static/js/2.4808782a.chunk.js",
+    "static/js/2.4808782a.chunk.js.map": "/VisaNet/visanet-hackaton/static/js/2.4808782a.chunk.js.map",
+    "index.html": "/VisaNet/visanet-hackaton/index.html",
+    "precache-manifest.562eea429f9893b052d4590ae62f5715.js": "/VisaNet/visanet-hackaton/precache-manifest.562eea429f9893b052d4590ae62f5715.js",
+    "service-worker.js": "/VisaNet/visanet-hackaton/service-worker.js",
+    "static/css/main.babf44c5.chunk.css.map": "/VisaNet/visanet-hackaton/static/css/main.babf44c5.chunk.css.map",
+    "static/media/App.css": "/VisaNet/visanet-hackaton/static/media/vitrna.ff7873cf.jpg",
+    "static/media/fifthScreen.css": "/VisaNet/visanet-hackaton/static/media/money.9941a6db.png",
+    "static/media/business.css": "/VisaNet/visanet-hackaton/static/media/growth.eb9d68d4.jpg"
+  }
+}
