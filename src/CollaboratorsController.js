@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import firebase from './firebase';
+import firebase from './services/firebase';
 import { Link } from 'react-router-dom';
 import './collaborators.css';
 import Colab from './components/Colab';
