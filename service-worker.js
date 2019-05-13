@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/VisaNet/precache-manifest.7f55cdebf8fad9808fc1fa8c22be6475.js"
+  "/VisaNet/precache-manifest.41f17593f4a13e2522d4e50d5dc58c12.js"
 );
 
 self.addEventListener('message', (event) => {
