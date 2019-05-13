@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "57c1db83d1b2063593b5216b509c0c0c",
+    "revision": "05cdd1d5801e87e6b0ae4cd63d2b2bf6",
     "url": "/VisaNet/index.html"
   },
   {
-    "revision": "2315c21ec2c40e108e91",
+    "revision": "975c505dfa623fb221de",
     "url": "/VisaNet/static/css/main.ae0c6922.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VisaNet/static/js/2.24478e76.chunk.js"
   },
   {
-    "revision": "2315c21ec2c40e108e91",
-    "url": "/VisaNet/static/js/main.6325862d.chunk.js"
+    "revision": "975c505dfa623fb221de",
+    "url": "/VisaNet/static/js/main.1e2b502e.chunk.js"
   },
   {
     "revision": "7defbdfc9b2d540611ee",
